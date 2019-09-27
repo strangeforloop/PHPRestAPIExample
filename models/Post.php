@@ -156,4 +156,30 @@
         printf("Error: %s. \n", $stmt->error);
         return false;
     }
+
+    // Delete Post
+    public function delete() {
+        // Delete query
+        $query = 'DELETE FROM ' . $this->table .
+            ' WHERE 
+                id = :id';
+        
+        $stmt = $this->conn->prepare($query);
+
+        // Clean id
+        $this->id = htmlspecialchars(strip_tags($this->id));
+        
+        // Bind id to param
+        $stmt->bindParam(':id', $this->id);
+
+        // Execute query
+        if ($stmt->execute()) {
+            return true;
+        }
+
+        printf("Error: %s. \n", $stmt->error);
+        return false;
+
+
+    }
 }
