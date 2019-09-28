@@ -73,7 +73,7 @@
 
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-            // Set properties
+            // Set properties to use from API endpoint
             $this->title = $row['title'];
             $this->body = $row['body'];
             $this->author = $row['author'];
@@ -179,7 +179,5 @@
 
         printf("Error: %s. \n", $stmt->error);
         return false;
-
-
     }
 }
