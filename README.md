@@ -9,6 +9,8 @@ This project uses Object Oriented concepts for the creation of a database class 
 There are two resources the API can access: 
 Category and Post
 
+#### Post
+
 | Endpoint  | HTTP Method | CRUD Method | Action |
 | ------------- | ------------- | ------------- | ------------- |
 | post/read    | GET| READ | Get all posts |
@@ -17,6 +19,7 @@ Category and Post
 | post/update/:id | PUT  | UPDATE | Update a single post |
 | post/delete | DELETE  | DELETE | Delete a single post |
 
+#### Category
 
 | Endpoint  | HTTP Method | CRUD Method | Action |
 | ------------- | ------------- | ------------- | ------------- |
@@ -37,7 +40,7 @@ We can test the API using [Postman](https://www.getpostman.com) or [curl](https:
 ## Example
 To get the post with an id of 1:
 ```
-GET category/read_single.php?id=1
+GET post/read_single.php?id=1
 ```
 
 It will return:
