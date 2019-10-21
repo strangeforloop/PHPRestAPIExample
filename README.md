@@ -1,6 +1,6 @@
 # PHPRestAPIExample
 
-A simple PHP Rest API to demonstrate CRUD functionality on a MySQL Database. This API is built without the use of any frameworks for the purposes of demonstrating what happens in pure PHP.
+A simple PHP REST API to demonstrate CRUD functionality on a MySQL Database. This API is built without the use of any frameworks for the purposes of demonstrating what happens in pure PHP.
 
 This project uses Object Oriented concepts for the creation of a database class object as well as PDO to connect to the MySQL database.
 
