@@ -7,7 +7,7 @@ This project uses Object Oriented concepts for the creation of a database class 
 
 ## Structure
 There are two resources the API can access: 
-Category and Post
+Post and Category
 
 #### Post
 
